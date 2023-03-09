@@ -11,7 +11,7 @@ const Tours = ()=> {
         const fetchTours = async () => {
             try {
                 const resp = await fetch(url);
-                const fetchedTours = resp.json();
+                const fetchedTours = await resp.json();
                 setTours(fetchedTours);
                 console.log(tours);
                 setIsLoading(false);
@@ -26,7 +26,7 @@ const Tours = ()=> {
     console.log(tours)
 
     return (
-            <>
+            
                 <div>
                     {
                         tours.map(tour => {
@@ -34,7 +34,7 @@ const Tours = ()=> {
                         })
                     }
                 </div>
-            </>
+            
     )
 
 }

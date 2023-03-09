@@ -1,17 +1,17 @@
 import React from "react";
 
-const Tour = ({name, price, info, img})=> {
+const Tour = ({tour})=> {
 
 
-
+  console.log(tour)
     return (
         <article className="max-w-md mx-auto my-16 shadow-md rounded-md">
-            <img src={img} alt={name} className=""/>
+            <img src={tour.image} alt={tour.name} className=""/>
              <div>
-                <h2>{name}</h2>
-                <h2>{price}</h2>
+                <h2>{tour.name} </h2>
+                <h2>{tour.price} </h2>
              </div>
-             <p>{info}</p>
+             <p>{tour.info}</p>
               <button>Not Interested</button>
         </article>
     )
