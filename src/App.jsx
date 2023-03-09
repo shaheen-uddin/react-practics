@@ -1,4 +1,5 @@
 import BirthDay from "./birthday/BirthDay"
+import Tours from "./tour/Tours"
 
  
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <div className="">
-       <BirthDay />
+      {/*  <BirthDay /> */}
+      <Tours />
     </div>
   )
 }
