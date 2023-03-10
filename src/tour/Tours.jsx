@@ -22,7 +22,12 @@ const Tours = ()=> {
         fetchTours();
 
     }, [])
+   
+    const handleRemove =(id)=>{
+        const updatedTours = tours.filter(tour => tour.id !== id);
+        setTours(updatedTours);
 
+    }
     console.log(tours)
 
     return (
@@ -30,7 +35,7 @@ const Tours = ()=> {
                 <div>
                     {
                         tours.map(tour => {
-                            return <Tour tour={tour} key={tour.id} />
+                            return <Tour tour={tour} key={tour.id} remove={handleRemove} />
                         })
                     }
                 </div>
