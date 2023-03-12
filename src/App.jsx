@@ -1,4 +1,5 @@
 import BirthDay from "./birthday/BirthDay"
+import Color from "./color/Color"
 import Lorem from "./lorem/Lorem"
 import Menus from "./menu/Menus"
 import Questions from "./questions/Questions"
@@ -21,7 +22,8 @@ function App() {
     {/* <Menus /> */}
     {/* <Tabs /> */}
     {/* <Slider /> */}
-    <Lorem />
+   {/*  <Lorem /> */}
+   <Color />
     </div>
   )
 }
