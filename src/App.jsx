@@ -1,4 +1,5 @@
 import BirthDay from "./birthday/BirthDay"
+import Lorem from "./lorem/Lorem"
 import Menus from "./menu/Menus"
 import Questions from "./questions/Questions"
 import Reviews from "./reviews/Reviews"
@@ -19,7 +20,8 @@ function App() {
     {/* <Questions /> */}
     {/* <Menus /> */}
     {/* <Tabs /> */}
-    <Slider />
+    {/* <Slider /> */}
+    <Lorem />
     </div>
   )
 }
