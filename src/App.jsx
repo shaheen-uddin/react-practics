@@ -1,5 +1,6 @@
 import BirthDay from "./birthday/BirthDay"
 import Color from "./color/Color"
+import Grocery from "./grocery-bud/Grocery"
 import Lorem from "./lorem/Lorem"
 import Menus from "./menu/Menus"
 import Questions from "./questions/Questions"
@@ -23,7 +24,8 @@ function App() {
     {/* <Tabs /> */}
     {/* <Slider /> */}
    {/*  <Lorem /> */}
-   <Color />
+   {/* <Color /> */}
+   <Grocery />
     </div>
   )
 }

@@ -6,7 +6,7 @@ import SingleColor from "./SingleColor";
 const Color = ()=> {
     const [color, setColor] = useState('');
     const [error, setError] = useState(false);
-    const [list, setList] = useState([]);
+    const [list, setList] = useState(new Values('#f15025').all(5));
 
     const handleSubmit = (e)=> {
         e.preventDefault();
@@ -38,7 +38,7 @@ const Color = ()=> {
         <section className="max-w-5xl border mx-auto flex flex-row items-center flex-wrap justify-start"> 
             {
             list.map((color, index)=> {
-
+               
                 return <SingleColor key={index} {...color} index={index} />
             })}
         </section>
