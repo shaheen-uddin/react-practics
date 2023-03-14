@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .success {
+        background-color: rgb(72, 150, 72);
+        padding-top: 0.25rem;
+        padding-bottom:0.25rem;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        width: 50%;
+    }
+    
+    .danger {
+        background-color: rgb(147, 36, 36);
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        width: 50%;
+    }
+    
+    
+}
