@@ -2,18 +2,19 @@ import { useEffect, useState } from "react";
 import Alert from "./Alert";
 import List from "./List";
 
-const getLocalStorage = ()=> {
+ const getLocalStorage = ()=> {
     let list = localStorage.getItem('list');
     if(list){
-        return (list = JSON.parse(localStorage.getItem(list)));
+        return (list = JSON.parse(localStorage.getItem('list')));
     } else {
         return [];
     }
-};
+}; 
+
 
 const Grocery = ()=> {
  const [name, setName] = useState('');
- const [list, setList]= useState([]);  
+ const [list, setList]= useState(getLocalStorage());  
  const [isEditing, setIsEditing] = useState(false);
  const [editID, setEditID] = useState(null);
  const [alert, setAlert] = useState({show: true, msg: '', type: 'success'});
