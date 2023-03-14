@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
 const List = ({items, removeItem, editItem}) => {
-    console.log(items);
+    
     return (
         <div>
             {items.map(item=> {

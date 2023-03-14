@@ -16,7 +16,7 @@ const Grocery = ()=> {
  const [list, setList]= useState([]);  
  const [isEditing, setIsEditing] = useState(false);
  const [editID, setEditID] = useState(null);
- const [alert, setAlert] = useState({show: true, msg: 'Hello world', type: 'success'});
+ const [alert, setAlert] = useState({show: true, msg: '', type: 'success'});
 
  const handleSubmit = (e)=> {
     e.preventDefault();
@@ -48,6 +48,7 @@ const Grocery = ()=> {
      setAlert({show, type, msg});
  }
  const clearList = ()=> {
+    setList([]);
     showAlert(true, 'danger', 'empty list');
  }
  const removeItem = (id)=> {
@@ -64,8 +65,7 @@ const Grocery = ()=> {
     localStorage.setItem('list', JSON.stringify(list));
  }, [list]);
 
-/*  console.log(name);
- console.log(list); */
+
     return (
         <section className="max-w-4xl mx-auto my-20 shadow-lg rounded-md p-6">
             <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center space-y-4" >
